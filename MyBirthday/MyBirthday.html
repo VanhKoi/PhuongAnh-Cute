@@ -61,10 +61,9 @@
                 </div>
                 <div class="avatar">
                     <img src="./pa.jpg" alt="" class="avatar__img" onclick="showMessage()" />
-                    <!-- 4. Tên của người đó -->
-                    <h2 onclick="showMessage()" class="avatar__title">Đừng quên ấn vào ảnh bên trên sẽ có bất ngờ 🥳 </h1>
-                    <h1 onclick="showMessage()" class="avatar__title">Phương Anh</h1>
-                    <p>Made By 🤍 Vanh</p>
+                    <h2 onclick="showMessage()" class="avatar__title">sdfjkshdfsdjfhsdfksjh skjfhsfdksjhádadasdadasd 🥳 </h1> <!--wtf làm sao để cho nó ở center lui bên dưới đây tính từng cái 1 mệt vc-->
+                    <h1 onclick="showMessage()" class="avatar__title">Vanhxyz</h1>
+                    <p>Made By 🤍 Vanhxyz</p>
                 </div>
                 
                 <audio autoplay loop>
@@ -78,13 +77,18 @@
             }
             function showMessage() {
                 swal({
-                    title: "✉️ Lời Nhắn 1/10/200777 ✉️", // title
+                    title: "✉️ Lời Nhắn 1/10/2007 ✉️", // title
                     text: "Gửi cô gái 16 tuổi xinh đẹp, hãy biết cố gắng thật nhiều để sau này không hối hận, hãy biết yêu thương bản thân để luôn có sức khỏe khỏe mạnh, hãy biết hiếu thuận gia đình để bố mẹ không bao giờ buồn, và hơn hết hãy tìm được người mà có đủ tin tưởng để em có thể dựa vào 💚", // Nội dung lời nhắn
                     button: {
                         text: "💖",
                     },
                 });
             }
+            const audio = document.querySelector("audio")
+            const avatarImg = document.querySelector(".avatar__img")
+            avatarImg.addEventListener("click",()=>{
+                audio.play()
+            })
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
