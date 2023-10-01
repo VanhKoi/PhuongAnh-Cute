@@ -16,43 +16,14 @@ body {
     background-image: radial-gradient(#374566, #010203);
     font-family: 'Lobster', cursive;
 }
-audio {
-    position: static;
-    top: 300px;
-}
-p {
-    position: absolute;
-    bottom: -325px;
-    left: -246;
-    right: 100;
-    color: rgb(159, 240, 229);
-    font-size: 0.8em;
-}
-h1 {
-    position: relative;
-    top: 185px;
-    left: -123;
-    text-align: center;
-    color: rgb(236, 108, 194);
-    font-size: 2.5em;
-}
-h2 {
-    position: relative;
-    top: 230px;
-    left: -110px;
-    text-align: center;
-    color: pink;
-    font-size: 1.5em;
-}
-span {
-    text-transform: uppercase;
-}
+/*  */
 p {
     position: fixed;
     color: #80c6f1;
     bottom: 0;
     left: 0;
     width: 300px;
+    font-size: 1em;   
 }
 .container {
     width: 800px;
@@ -265,6 +236,7 @@ p {
     position: absolute;
     top: 50%;
     left: calc(50% - 100px);
+    text-align: center;
 }
 
 .avatar__img {
@@ -279,15 +251,21 @@ p {
     -o-animation: balloon1 6s ease-in-out infinite;
     animation: balloon1 6s ease-in-out infinite;
 }
-
 .avatar__title  {
     cursor: pointer;
-    /* color: black; */
-    margin-top: -80px;
     -webkit-animation: balloon1 4s ease-in-out infinite;
     -moz-animation: balloon1 4s ease-in-out infinite;
     -o-animation: balloon1 4s ease-in-out infinite;
     animation: balloon1 4s ease-in-out infinite;
+}
+.avatar h1{
+    color: rgb(236, 108, 194);
+    font-size: 2.5em;
+}
+.avatar h2{
+    margin-top: 100;
+    color: pink;
+    font-size: 1.5em;
 }
 .balloon > div:before {
     color: rgba(182, 15, 97, 0.9);
@@ -304,6 +282,8 @@ span {
     top: 30px;
     left: 50%;
     margin-left: -27px;
+    text-transform: uppercase;
+
 }
 /*BALLOON 1 4*/
 @-webkit-keyframes balloon1 {
