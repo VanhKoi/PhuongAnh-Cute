@@ -672,7 +672,7 @@ br {
         font-size: 2em;
     }
 }
-@media screen and (min-width:320px) and (max-width:460px) {
+@media screen and (min-width:320px) and (max-width:1024px) {
     .container {
         justify-content: space-around;
     }
