@@ -23,7 +23,7 @@ p {
     bottom: 0;
     left: 0;
     width: 300px;
-    font-size: 1em;   
+    font-size: 1.5em;   
 }
 
 .container {
@@ -636,6 +636,42 @@ br {
     80%, 99.9% {
       margin-top: 30%;
       margin-left: 80%; } }
+      @media screen and (min-width:320px) and (max-width:460px) {
+    .container {
+        justify-content: space-around;
+    }
+    .balloon{
+        width: 700px;
+    }
+    .balloon div{
+        width: 90px;
+        height: 120px;
+    }
+    .balloon div:nth-child(6){
+        left: -100;
+    }
+    .balloon div:nth-child(7){
+        left: 10;
+    }
+    .balloon div:nth-child(13){
+        left: unset;
+        right: -90;
+    }
+    .avatar__img{
+        width: 250px;
+        height: 265px;
+    }
+    .avatar h1{
+        color: rgb(236, 108, 194);
+        font-size: 3em;
+        margin-bottom:50px;
+    }
+    .avatar h2{
+        margin-top: 100px;
+        color: pink;
+        font-size: 2em;
+    }
+}
 @media screen and (min-width:320px) and (max-width:460px) {
     .container {
         justify-content: space-around;
